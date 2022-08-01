@@ -269,8 +269,7 @@ header.close + .main .top-bar {
   padding: 10px 10px;
 }
 .videos-section .card:hover {
-  transform: scale(1.2);
-  background-color: var(--primary-color);
+  box-shadow: 0 0 20px 2px var(--gray-white);
 }
 /* .videos-section .card .video-img {
   border-radius: 10px;

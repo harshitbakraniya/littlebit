@@ -53,3 +53,12 @@ btn.addEventListener("click", () => {
     dark = true;
   }
 });
+
+// video player
+let card = document.querySelectorAll(".videos-section .card");
+// console.log(card);
+for (let i = 0; i < card.length; i++) {
+  card[i].addEventListener("click", () => {
+    window.location.href = "./videoPlayer.html";
+  });
+}
