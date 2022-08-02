@@ -15,7 +15,7 @@ icon.addEventListener("click", () => {
 // dark light mode
 let btn = document.querySelector(".btn");
 let text = document.querySelector(".dark-light .text");
-let dark = false;
+let dark;
 let logoText = document.querySelector(".logo-text");
 // change css variable
 let root = getComputedStyle(document.documentElement);
@@ -56,9 +56,20 @@ btn.addEventListener("click", () => {
 
 // video player
 let card = document.querySelectorAll(".videos-section .card");
-// console.log(card);
 for (let i = 0; i < card.length; i++) {
   card[i].addEventListener("click", () => {
     window.location.href = "./videoPlayer.html";
+    dark = false;
   });
 }
+
+// menu handle for mobile
+let icon_for_mobile = document.querySelector(".icon-for-mobile");
+let close_btn = document.querySelector(".close-mobile");
+
+icon_for_mobile.addEventListener("click", () => {
+  navbar.classList.add("active-mobile");
+});
+close_btn.addEventListener("click", () => {
+  navbar.classList.remove("active-mobile");
+});

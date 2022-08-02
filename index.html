@@ -21,14 +21,9 @@
     <header class="header">
       <nav class="navbar">
         <div class="logo-part">
-          <a href="/" class="row">
-            <img
-              src="./assets/images/favicon.png"
-              alt="logo"
-              class="main-logo"
-            />
-            <div class="logo-text">Little Bit</div>
-          </a>
+          <img src="./assets/images/favicon.png" alt="logo" class="main-logo" />
+          <div class="logo-text">Little Bit</div>
+          <i class="bx bx-x-circle close-mobile"></i>
         </div>
         <div class="home-part">
           <!-- <div class="line"></div> -->
@@ -134,13 +129,17 @@
 
     <main class="main">
       <section class="top-bar">
+        <i class="bx bx-menu icon-for-mobile"></i>
+        <img src="./assets/images/favicon.png" alt="logo" class="logo-mobile" />
         <div class="search-bar">
-          <input
-            type="text"
-            class="form-control"
-            name="search"
-            placeholder="Search"
-          />
+          <form autocomplete="off" method="post" action="">
+            <input
+              type="text"
+              class="form-control"
+              name="search"
+              placeholder="Search"
+            />
+          </form>
           <i class="bx bx-search search-icon"></i>
         </div>
         <i class="bx bxs-microphone-alt voice"></i>
