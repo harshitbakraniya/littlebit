@@ -505,6 +505,9 @@ header.close + .main .top-bar {
   }
 }
 @media screen and (max-width: 575.98px) {
+  .container {
+    padding: 20px 10px;
+  }
   header {
     width: 100%;
     left: -100%;
@@ -512,6 +515,10 @@ header.close + .main .top-bar {
   }
   header.active-mobile {
     left: 0;
+    position: fixed;
+  }
+  header.active-mobile ~ .videos-section {
+    overflow-y: hidden;
   }
   header .close-mobile {
     display: block;
@@ -519,6 +526,7 @@ header.close + .main .top-bar {
     right: 30px;
     top: 25px;
     font-size: 1.5rem;
+    color: var(--text);
   }
   .main {
     width: 100%;
@@ -539,7 +547,9 @@ header.close + .main .top-bar {
   .top-bar .icon-for-mobile {
     display: block;
     font-size: 2rem;
+    color: var(--text);
   }
+
   .col-lg-5 {
     flex-basis: 100% !important;
   }
